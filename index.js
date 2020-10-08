@@ -20,7 +20,7 @@ function moveDodgerUp() {
   var upNumbers = dodger.style.up.replace('px', '');
   var up = parseInt(upNumbers, 10)
   if (up > 0) {
-    dodger.style.up = `${up - 10}px`
+    dodger.style.up = `${up + 10}px`
   }
 }
 document.addEventListener('keydown', function(e) {
