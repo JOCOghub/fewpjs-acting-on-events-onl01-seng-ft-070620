@@ -17,12 +17,11 @@ function moveDodgerRight() {
 }
 
 function moveDodgerUp() {
-  var upNumbers = dodger.style.up.replace('px', '');
-  var up = parseInt(upNumbers, 10)
-  if (up > 0) {
-    dodger.style.up = `${up + 10}px`
+  var upNumbers = dodger.style.down.replace('px', '');
+  var down = parseInt(upNumbers, 10)
+    dodger.style.down = `${down + 10}px`
   }
-}
+  
 document.addEventListener('keydown', function(e) {
   if (e.key === "ArrowUp") {
     moveDodgerUp()
